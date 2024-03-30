@@ -12,11 +12,13 @@ the target website. You must make your program generate a QR code that takes som
 
 1. Add the QR code image that links to your own GitHub homepage that you generate to the readme.md file, so that it appears below.
 
-QR CODE : https://github.com/NeelAPatel/NJIT-IS601-homework7/blob/master/QRCode_20240330022625.png
+QR CODE :
+![image](https://github.com/NeelAPatel/NJIT-IS601-homework7/blob/master/QRCode_20240330022625.png)
 
 2.  Add an image of viewing the log of successfully creating the QR code below.
 
-LOG EXECUTION: https://github.com/NeelAPatel/NJIT-IS601-homework7/blob/master/Logs.png
+LOG EXECUTION: 
+![image](https://github.com/NeelAPatel/NJIT-IS601-homework7/blob/master/Logs.png)
  
 ## Lesson Video
 
