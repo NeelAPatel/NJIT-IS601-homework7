@@ -13,8 +13,10 @@ load_dotenv()
 
 # Environment Variables for Configuration
 QR_DIRECTORY = os.getenv('QR_CODE_DIR', 'qr_codes')  # Directory for saving QR code
-FILL_COLOR = os.getenv('FILL_COLOR', (194, 61, 129))  # Fill color for the QR code
-BACK_COLOR = os.getenv('BACK_COLOR', (61, 194, 126))  # Background color for the QR code
+FILL_COLOR = os.getenv('FILL_COLOR', 'white')  # Fill color for the QR code
+BACK_COLOR = os.getenv('BACK_COLOR', 'black')  # Background color for the QR code
+QR_DATA_URL = os.getenv('QR_DATA_URL', 'https://github.com/neelapatel')  # Background color for the QR code
+
 
 def setup_logging():
     logging.basicConfig(
@@ -39,7 +41,7 @@ def is_valid_url(url):
         logging.error(f"Invalid URL provided: {url}")
         return False
 
-def generate_qr_code(data, path, fill_color, back_color):
+def generate_qr_code(data, path, fill_color='white', back_color='black'):
     if not is_valid_url(data):
         return  # Exit the function if the URL is not valid
 

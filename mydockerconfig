@@ -1,1 +1,4 @@
-docker run -d --name qr-generator -e QR_CODE_DIR='qr_codes' -v .:/app/qr_codes my-qr-app; docker run -v .:/app my-qr-app --url http://www.github.com/neelapatel; docker logs qr-generator
+
+docker build -t my-qr-app .;
+
+docker run -d --name qr-generator -v .:/app/qr_codes my-qr-app -e QR_DATA_URL='https://www.github.com/neelapatel' -e FILL_COLOR='white' -e BACK_COLOR='black' -e QR_CODE_DIR='qr_codes' 
